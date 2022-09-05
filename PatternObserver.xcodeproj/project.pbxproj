@@ -6,8 +6,21 @@
 	objectVersion = 55;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9B4D131E28C63EA3009A1233 /* Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4D131D28C63EA3009A1233 /* Publisher.swift */; };
+		9B4D132028C63EBC009A1233 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4D131F28C63EBC009A1233 /* Observer.swift */; };
+		9B4D132228C63EFF009A1233 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4D132128C63EFF009A1233 /* Customer.swift */; };
+		9B4D132428C63F2D009A1233 /* YouTube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4D132328C63F2D009A1233 /* YouTube.swift */; };
+		9B4D132628C63F48009A1233 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4D132528C63F48009A1233 /* main.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		9B4D12E228C63306009A1233 /* PatternObserver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PatternObserver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B4D131D28C63EA3009A1233 /* Publisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Publisher.swift; sourceTree = "<group>"; };
+		9B4D131F28C63EBC009A1233 /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		9B4D132128C63EFF009A1233 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		9B4D132328C63F2D009A1233 /* YouTube.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTube.swift; sourceTree = "<group>"; };
+		9B4D132528C63F48009A1233 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +53,7 @@
 		9B4D12E428C63306009A1233 /* PatternObserver */ = {
 			isa = PBXGroup;
 			children = (
+				9B4D132528C63F48009A1233 /* main.swift */,
 				9B4D131C28C63D45009A1233 /* NewObserver(Subscriber) */,
 				9B4D131B28C63D25009A1233 /* NewSubject(Publisher) */,
 				9B4D131A28C63D14009A1233 /* Observer(Subscriber) */,
@@ -51,6 +65,7 @@
 		9B4D131928C63D03009A1233 /* Subject(Publisher) */ = {
 			isa = PBXGroup;
 			children = (
+				9B4D131D28C63EA3009A1233 /* Publisher.swift */,
 			);
 			path = "Subject(Publisher)";
 			sourceTree = "<group>";
@@ -58,6 +73,7 @@
 		9B4D131A28C63D14009A1233 /* Observer(Subscriber) */ = {
 			isa = PBXGroup;
 			children = (
+				9B4D131F28C63EBC009A1233 /* Observer.swift */,
 			);
 			path = "Observer(Subscriber)";
 			sourceTree = "<group>";
@@ -65,6 +81,7 @@
 		9B4D131B28C63D25009A1233 /* NewSubject(Publisher) */ = {
 			isa = PBXGroup;
 			children = (
+				9B4D132328C63F2D009A1233 /* YouTube.swift */,
 			);
 			path = "NewSubject(Publisher)";
 			sourceTree = "<group>";
@@ -72,6 +89,7 @@
 		9B4D131C28C63D45009A1233 /* NewObserver(Subscriber) */ = {
 			isa = PBXGroup;
 			children = (
+				9B4D132128C63EFF009A1233 /* Customer.swift */,
 			);
 			path = "NewObserver(Subscriber)";
 			sourceTree = "<group>";
@@ -108,6 +126,7 @@
 				TargetAttributes = {
 					9B4D12E128C63306009A1233 = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -144,6 +163,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B4D132228C63EFF009A1233 /* Customer.swift in Sources */,
+				9B4D132628C63F48009A1233 /* main.swift in Sources */,
+				9B4D132428C63F2D009A1233 /* YouTube.swift in Sources */,
+				9B4D131E28C63EA3009A1233 /* Publisher.swift in Sources */,
+				9B4D132028C63EBC009A1233 /* Observer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +293,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9LAFQ24GSN;
@@ -287,6 +312,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Jason.PatternObserver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -297,6 +323,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9LAFQ24GSN;
